@@ -14,6 +14,12 @@
 		AD16739C1A27CB3E0046F347 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD16739B1A27CB3E0046F347 /* Images.xcassets */; };
 		AD16739F1A27CB3E0046F347 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD16739D1A27CB3E0046F347 /* LaunchScreen.xib */; };
 		AD1673AB1A27CB3E0046F347 /* iOSSwiftMetalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1673AA1A27CB3E0046F347 /* iOSSwiftMetalTests.swift */; };
+		AD1673B81A27D6EB0046F347 /* Matrix4.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1673B71A27D6EB0046F347 /* Matrix4.m */; };
+		AD1673BD1A27D85C0046F347 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1673BC1A27D85C0046F347 /* Vertex.swift */; };
+		AD1673BF1A27D88E0046F347 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1673BE1A27D88E0046F347 /* Node.swift */; };
+		AD1673C11A27D8C90046F347 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1673C01A27D8C90046F347 /* Triangle.swift */; };
+		AD1673C51A27DE5B0046F347 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = AD1673C41A27DE5B0046F347 /* Shaders.metal */; };
+		AD1673C71A27DFB10046F347 /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1673C61A27DFB10046F347 /* Plane.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +44,14 @@
 		AD1673A41A27CB3E0046F347 /* iOSSwiftMetalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSSwiftMetalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD1673A91A27CB3E0046F347 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD1673AA1A27CB3E0046F347 /* iOSSwiftMetalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSSwiftMetalTests.swift; sourceTree = "<group>"; };
+		AD1673B61A27D6EB0046F347 /* Matrix4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrix4.h; sourceTree = "<group>"; };
+		AD1673B71A27D6EB0046F347 /* Matrix4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Matrix4.m; sourceTree = "<group>"; };
+		AD1673BB1A27D7690046F347 /* iOSSwiftMetal-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iOSSwiftMetal-Bridging-Header.h"; sourceTree = "<group>"; };
+		AD1673BC1A27D85C0046F347 /* Vertex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
+		AD1673BE1A27D88E0046F347 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		AD1673C01A27D8C90046F347 /* Triangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
+		AD1673C41A27DE5B0046F347 /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		AD1673C61A27DFB10046F347 /* Plane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +95,14 @@
 			children = (
 				AD1673911A27CB3E0046F347 /* AppDelegate.swift */,
 				AD1673961A27CB3E0046F347 /* ViewController.swift */,
+				AD1673BC1A27D85C0046F347 /* Vertex.swift */,
+				AD1673BE1A27D88E0046F347 /* Node.swift */,
+				AD1673C01A27D8C90046F347 /* Triangle.swift */,
+				AD1673C61A27DFB10046F347 /* Plane.swift */,
+				AD1673C41A27DE5B0046F347 /* Shaders.metal */,
+				AD1673B61A27D6EB0046F347 /* Matrix4.h */,
+				AD1673B71A27D6EB0046F347 /* Matrix4.m */,
+				AD1673BB1A27D7690046F347 /* iOSSwiftMetal-Bridging-Header.h */,
 				AD1673981A27CB3E0046F347 /* Main.storyboard */,
 				AD16739B1A27CB3E0046F347 /* Images.xcassets */,
 				AD16739D1A27CB3E0046F347 /* LaunchScreen.xib */,
@@ -215,9 +237,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD1673C51A27DE5B0046F347 /* Shaders.metal in Sources */,
+				AD1673C71A27DFB10046F347 /* Plane.swift in Sources */,
+				AD1673B81A27D6EB0046F347 /* Matrix4.m in Sources */,
 				AD1673971A27CB3E0046F347 /* ViewController.swift in Sources */,
 				AD1673921A27CB3E0046F347 /* AppDelegate.swift in Sources */,
 				AD1673951A27CB3E0046F347 /* iOSSwiftMetal.xcdatamodeld in Sources */,
+				AD1673BD1A27D85C0046F347 /* Vertex.swift in Sources */,
+				AD1673BF1A27D88E0046F347 /* Node.swift in Sources */,
+				AD1673C11A27D8C90046F347 /* Triangle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +373,8 @@
 				INFOPLIST_FILE = iOSSwiftMetal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOSSwiftMetal/iOSSwiftMetal-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -355,6 +385,8 @@
 				INFOPLIST_FILE = iOSSwiftMetal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOSSwiftMetal/iOSSwiftMetal-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -411,6 +443,7 @@
 				AD1673B01A27CB3E0046F347 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AD1673B11A27CB3E0046F347 /* Build configuration list for PBXNativeTarget "iOSSwiftMetalTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +452,7 @@
 				AD1673B31A27CB3E0046F347 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
